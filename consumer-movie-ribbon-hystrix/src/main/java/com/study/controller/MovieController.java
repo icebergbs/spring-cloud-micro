@@ -21,7 +21,7 @@ public class MovieController {
 
   @Autowired
   private LoadBalancerClient loadBalancerClient;
-
+  //Hystrix容错
   @HystrixCommand(fallbackMethod = "findByIdFallback")
   @GetMapping("/user/{id}")
   public User findById(@PathVariable Long id) {
