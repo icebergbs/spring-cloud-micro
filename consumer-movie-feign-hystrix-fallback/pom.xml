@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.study</groupId>
-	<artifactId>consumer-movie-feign-customizing</artifactId>
+	<artifactId>consumer-movie-feign-hystrix-fallback</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>consumer-movie</name>
 	<description>Demo project for Spring Boot</description>
@@ -19,7 +19,6 @@
 	</properties>
 
 	<dependencies>
-
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
