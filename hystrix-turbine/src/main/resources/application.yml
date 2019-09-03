@@ -1,0 +1,23 @@
+
+server:
+  port: 8031
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    filter-only-up-instances: true
+spring:
+  application:
+    name: hystrix-turbine
+turbine:
+  app-config: consumer-move
+  ##,consumer-movie-feign-hystrix-fallback-stream
+  cluster-name-expression: "'default'"
+#security:
+#  basic:
+#    enabled: true
+#  user:
+#    name: user
+#    password: pw123

@@ -1,0 +1,10 @@
+
+server:
+  port: 8030
+
+#security:
+#  basic:
+#    enabled: true
+#  user:
+#    name: user
+#    password: pw123
